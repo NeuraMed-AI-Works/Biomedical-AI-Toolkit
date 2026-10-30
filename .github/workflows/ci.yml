@@ -1,0 +1,49 @@
+name: Neura-Med AI Toolkit CI
+
+# Runs the full matlab.unittest test suite on every push and pull request.
+#
+# NOTE: This requires a MATLAB-licensed runner. Options:
+#   (a) Use MathWorks' hosted GitHub Action (matlab-actions/setup-matlab +
+#       matlab-actions/run-tests) with a MathWorks-hosted license, or
+#   (b) Point `runs-on` at a self-hosted runner that already has MATLAB
+#       and the required toolboxes (Statistics and Machine Learning
+#       Toolbox; Deep Learning Toolbox for Module 4 tests) installed.
+# This workflow uses option (a) by default.
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    name: Run MATLAB Test Suite
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up MATLAB
+        uses: matlab-actions/setup-matlab@v2
+        with:
+          products: >
+            Statistics_and_Machine_Learning_Toolbox
+            Deep_Learning_Toolbox
+
+      - name: Run Neura-Med AI Toolkit test suite
+        uses: matlab-actions/run-command@v2
+        with:
+          command: |
+            addpath(genpath('src'));
+            cd tests
+            run_all_tests
+
+      - name: Upload test log (if generated)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: neuramed-test-results
+          path: logs/*.jsonl
+          if-no-files-found: ignore

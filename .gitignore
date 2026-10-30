@@ -1,0 +1,11 @@
+# Neura-Med AI Biomedical AI Toolkit - ignored paths
+*.asv
+*.mat.bak
+slprj/
+logs/*.jsonl
+examples/output/
+*.autosave
+
+# OS
+.DS_Store
+Thumbs.db

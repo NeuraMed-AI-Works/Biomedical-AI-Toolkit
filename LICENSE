@@ -1,0 +1,31 @@
+Neura-Med AI Biomedical AI Toolkit
+Copyright (c) 2026 Neura-Med AI. All rights reserved.
+
+PROPRIETARY AND CONFIDENTIAL
+
+This software and associated documentation (the "Toolkit") are proprietary
+to Neura-Med AI and are provided for internal use by Neura-Med AI and its
+authorized product teams and collaborators only.
+
+Permission is granted to authorized personnel to use, copy, modify, and
+integrate this Toolkit into Neura-Med AI products, subject to the following
+conditions:
+
+1. This copyright notice and license shall be included in all copies or
+   substantial portions of the Toolkit.
+2. The Toolkit may not be distributed, sublicensed, or disclosed to any
+   third party without prior written authorization from Neura-Med AI.
+3. The Toolkit is provided "AS IS", without warranty of any kind, express
+   or implied, including but not limited to the warranties of
+   merchantability, fitness for a particular purpose, and noninfringement.
+   In no event shall Neura-Med AI or its contributors be liable for any
+   claim, damages, or other liability arising from, out of, or in
+   connection with the Toolkit or its use.
+4. Outputs of the `neuramed.clinical` module are AI-generated decision
+   support only and do not constitute a medical diagnosis. Any clinical
+   or regulatory use of this Toolkit or any product built upon it requires
+   independent validation, clinician review, and appropriate regulatory
+   clearance; no such clearance is claimed or implied by this license.
+
+To request a different license (e.g. for external distribution or
+open-sourcing a component), contact the Neura-Med AI project maintainers.

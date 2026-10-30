@@ -1,0 +1,261 @@
+===== ENVIRONMENT =====
+MATLAB release : 2025a
+OS             : PCWIN64
+Date           : 12-Oct-2026 18:33:54
+Statistics and Machine Learning Toolbox    : INSTALLED
+Deep Learning Toolbox                      : INSTALLED
+
+===== STARTUP =====
+Neura-Med AI Biomedical AI Toolkit v1.0.0 initialized.
+  Package root added to path: C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\src
+  Modules: dataset | features | models | deeplearning | evaluation | clinical | utils
+
+===== TEST SUITE =====
+Neura-Med AI Biomedical AI Toolkit v1.0.0 initialized.
+  Package root added to path: C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\src
+  Modules: dataset | features | models | deeplearning | evaluation | clinical | utils
+ Running test_clinical_module
+  Setting up test_clinical_module
+Neura-Med AI Biomedical AI Toolkit v1.0.0 initialized.
+  Package root added to path: C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\src
+  Modules: dataset | features | models | deeplearning | evaluation | clinical | utils
+  Done setting up test_clinical_module in 0.096586 seconds
+   Running test_clinical_module/test_computeConfidenceScore_returnsMaxProbability
+   Done test_clinical_module/test_computeConfidenceScore_returnsMaxProbability in 0.33427 seconds
+   Running test_clinical_module/test_classifyRisk_defaultThresholds
+   Done test_clinical_module/test_classifyRisk_defaultThresholds in 0.15411 seconds
+   Running test_clinical_module/test_classifyRisk_outOfRangeThrows
+   Done test_clinical_module/test_classifyRisk_outOfRangeThrows in 0.1727 seconds
+   Running test_clinical_module/test_predictDisease_returnsStructArrayWithExpectedFields
+   Done test_clinical_module/test_predictDisease_returnsStructArrayWithExpectedFields in 1.5848 seconds
+   Running test_clinical_module/test_generateClinicalRecommendation_includesDisclaimerByDefault
+   Done test_clinical_module/test_generateClinicalRecommendation_includesDisclaimerByDefault in 0.064458 seconds
+   Running test_clinical_module/test_estimateProbability_entropyZeroForCertainPrediction
+   Done test_clinical_module/test_estimateProbability_entropyZeroForCertainPrediction in 0.44645 seconds
+  Tearing down test_clinical_module
+  Done tearing down test_clinical_module in 0.0004242 seconds
+ Done test_clinical_module in 2.8538 seconds
+__________
+
+ Running test_dataset_module
+  Setting up test_dataset_module
+Neura-Med AI Biomedical AI Toolkit v1.0.0 initialized.
+  Package root added to path: C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\src
+  Modules: dataset | features | models | deeplearning | evaluation | clinical | utils
+  Done setting up test_dataset_module in 0.12389 seconds
+   Running test_dataset_module/test_splitDataset_fractionsSumToTotal
+   Done test_dataset_module/test_splitDataset_fractionsSumToTotal in 0.27401 seconds
+   Running test_dataset_module/test_splitDataset_stratificationApprox
+   Done test_dataset_module/test_splitDataset_stratificationApprox in 0.08493 seconds
+   Running test_dataset_module/test_splitDataset_invalidFractionsThrows
+   Done test_dataset_module/test_splitDataset_invalidFractionsThrows in 0.043009 seconds
+   Running test_dataset_module/test_crossValidationSplit_correctFoldCount
+   Done test_dataset_module/test_crossValidationSplit_correctFoldCount in 0.060609 seconds
+   Running test_dataset_module/test_crossValidationSplit_noOverlapBetweenFolds
+   Done test_dataset_module/test_crossValidationSplit_noOverlapBetweenFolds in 0.04979 seconds
+   Running test_dataset_module/test_validateData_detectsMissingValues
+   Done test_dataset_module/test_validateData_detectsMissingValues in 0.14532 seconds
+   Running test_dataset_module/test_validateData_strictModeThrows
+   Done test_dataset_module/test_validateData_strictModeThrows in 0.049761 seconds
+   Running test_dataset_module/test_augmentData_multipliesRowCount
+   Done test_dataset_module/test_augmentData_multipliesRowCount in 0.11198 seconds
+   Running test_dataset_module/test_manageMetadata_createAndVerify
+   Done test_dataset_module/test_manageMetadata_createAndVerify in 0.054257 seconds
+  Tearing down test_dataset_module
+  Done tearing down test_dataset_module in 0.0002267 seconds
+ Done test_dataset_module in 0.99777 seconds
+__________
+
+ Running test_evaluation_module
+  Setting up test_evaluation_module
+Neura-Med AI Biomedical AI Toolkit v1.0.0 initialized.
+  Package root added to path: C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\src
+  Modules: dataset | features | models | deeplearning | evaluation | clinical | utils
+  Done setting up test_evaluation_module in 0.10488 seconds
+   Running test_evaluation_module/test_computeAccuracy_perfectPredictions
+   Done test_evaluation_module/test_computeAccuracy_perfectPredictions in 0.011122 seconds
+   Running test_evaluation_module/test_computeAccuracy_allWrong
+   Done test_evaluation_module/test_computeAccuracy_allWrong in 0.0046259 seconds
+   Running test_evaluation_module/test_confusionMatrix_diagonalMatchesCorrectPredictions
+   Done test_evaluation_module/test_confusionMatrix_diagonalMatchesCorrectPredictions in 0.082707 seconds
+   Running test_evaluation_module/test_precisionRecall_knownValues
+   Done test_evaluation_module/test_precisionRecall_knownValues in 0.074139 seconds
+   Running test_evaluation_module/test_f1Score_harmonicMeanCorrect
+   Done test_evaluation_module/test_f1Score_harmonicMeanCorrect in 0.075284 seconds
+   Running test_evaluation_module/test_sensitivitySpecificity_sumToSensibleRange
+   Done test_evaluation_module/test_sensitivitySpecificity_sumToSensibleRange in 0.034456 seconds
+   Running test_evaluation_module/test_computeROCAUC_perfectSeparationGivesAUC1
+   Done test_evaluation_module/test_computeROCAUC_perfectSeparationGivesAUC1 in 0.13002 seconds
+   Running test_evaluation_module/test_computeROCAUC_randomScoresNearHalf
+   Done test_evaluation_module/test_computeROCAUC_randomScoresNearHalf in 0.033598 seconds
+   Running test_evaluation_module/test_computeROCAUC_nonBinaryThrows
+   Done test_evaluation_module/test_computeROCAUC_nonBinaryThrows in 0.021049 seconds
+   Running test_evaluation_module/test_generateEvaluationReport_hasAllFields
+   Done test_evaluation_module/test_generateEvaluationReport_hasAllFields in 0.11729 seconds
+   Running test_evaluation_module/test_crossValidateModel_returnsAggregatedStats
+   Done test_evaluation_module/test_crossValidateModel_returnsAggregatedStats in 0.44595 seconds
+  Tearing down test_evaluation_module
+  Done tearing down test_evaluation_module in 0.0002574 seconds
+ Done test_evaluation_module in 1.1354 seconds
+__________
+
+ Running test_features_module
+  Setting up test_features_module
+Neura-Med AI Biomedical AI Toolkit v1.0.0 initialized.
+  Package root added to path: C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\src
+  Modules: dataset | features | models | deeplearning | evaluation | clinical | utils
+  Done setting up test_features_module in 0.097647 seconds
+   Running test_features_module/test_normalizeFeatures_rangeIsZeroOne
+   Done test_features_module/test_normalizeFeatures_rangeIsZeroOne in 0.013874 seconds
+   Running test_features_module/test_normalizeFeatures_paramsReusable
+   Done test_features_module/test_normalizeFeatures_paramsReusable in 0.02083 seconds
+   Running test_features_module/test_standardizeFeatures_zeroMeanUnitVar
+   Done test_features_module/test_standardizeFeatures_zeroMeanUnitVar in 0.051132 seconds
+   Running test_features_module/test_scaleFeatures_robustToOutliers
+   Done test_features_module/test_scaleFeatures_robustToOutliers in 0.02974 seconds
+   Running test_features_module/test_applyPCA_reducesDimensionality
+   Done test_features_module/test_applyPCA_reducesDimensionality in 0.056862 seconds
+   Running test_features_module/test_applyPCA_paramsReusableOnNewData
+   Done test_features_module/test_applyPCA_paramsReusableOnNewData in 0.017918 seconds
+   Running test_features_module/test_applyLDA_outputDimMatchesClassesMinusOne
+   Done test_features_module/test_applyLDA_outputDimMatchesClassesMinusOne in 0.0281 seconds
+   Running test_features_module/test_rankFeatures_returnsSortedDescending
+   Done test_features_module/test_rankFeatures_returnsSortedDescending in 0.0465 seconds
+   Running test_features_module/test_selectFeatures_returnsRequestedCount
+   Done test_features_module/test_selectFeatures_returnsRequestedCount in 0.028864 seconds
+  Tearing down test_features_module
+  Done tearing down test_features_module in 0.0002875 seconds
+ Done test_features_module in 0.39176 seconds
+__________
+
+ Running test_models_module
+  Setting up test_models_module
+Neura-Med AI Biomedical AI Toolkit v1.0.0 initialized.
+  Package root added to path: C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\src
+  Modules: dataset | features | models | deeplearning | evaluation | clinical | utils
+  Done setting up test_models_module in 0.097191 seconds
+   Running test_models_module/test_decisionTree_achievesGoodAccuracyOnSeparableData
+   Done test_models_module/test_decisionTree_achievesGoodAccuracyOnSeparableData in 0.055388 seconds
+   Running test_models_module/test_randomForest_achievesGoodAccuracy
+   Done test_models_module/test_randomForest_achievesGoodAccuracy in 0.53097 seconds
+   Running test_models_module/test_svm_achievesGoodAccuracy
+[Warning: Classes are perfectly separated. The optimal score-to-posterior transformation is a step function.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fitSVMPosterior', 'C:\Program Files\MATLAB\R2025a\toolbox\stats\classreg\fitSVMPosterior.m', 180)" style="font-weight:bold">fitSVMPosterior</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2025a\toolbox\stats\classreg\fitSVMPosterior.m',180,0)">line 180</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ClassificationSVM/fitPosterior', 'C:\Program Files\MATLAB\R2025a\toolbox\stats\classreg\ClassificationSVM.m', 636)" style="font-weight:bold">ClassificationSVM/fitPosterior</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2025a\toolbox\stats\classreg\ClassificationSVM.m',636,0)">line 636</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('neuramed.models.trainSVM', 'C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\src\+neuramed\+models\trainSVM.m', 57)" style="font-weight:bold">neuramed.models.trainSVM</a> (<a href="matlab: opentoline('C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\src\+neuramed\+models\trainSVM.m',57,0)">line 57</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('test_models_module>test_svm_achievesGoodAccuracy', 'C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\tests\test_models_module.m', 42)" style="font-weight:bold">test_models_module>test_svm_achievesGoodAccuracy</a> (<a href="matlab: opentoline('C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\tests\test_models_module.m',42,0)">line 42</a>)]
+   Done test_models_module/test_svm_achievesGoodAccuracy in 0.97108 seconds
+   Running test_models_module/test_knn_achievesGoodAccuracy
+   Done test_models_module/test_knn_achievesGoodAccuracy in 0.20644 seconds
+   Running test_models_module/test_naiveBayes_achievesGoodAccuracy
+   Done test_models_module/test_naiveBayes_achievesGoodAccuracy in 0.22008 seconds
+   Running test_models_module/test_logisticRegression_achievesGoodAccuracy
+   Done test_models_module/test_logisticRegression_achievesGoodAccuracy in 0.20704 seconds
+   Running test_models_module/test_xgboost_achievesGoodAccuracy
+   Done test_models_module/test_xgboost_achievesGoodAccuracy in 0.70834 seconds
+   Running test_models_module/test_ensemble_softVoteProducesValidPredictions
+   Done test_models_module/test_ensemble_softVoteProducesValidPredictions in 0.15729 seconds
+   Running test_models_module/test_ensemble_stackingProducesValidPredictions
+   Done test_models_module/test_ensemble_stackingProducesValidPredictions in 0.15614 seconds
+   Running test_models_module/test_trainEnsemble_invalidLearnerThrows
+   Done test_models_module/test_trainEnsemble_invalidLearnerThrows in 0.051561 seconds
+  Tearing down test_models_module
+  Done tearing down test_models_module in 0.0008396 seconds
+ Done test_models_module in 3.3624 seconds
+__________
+
+ Running test_utils_module
+  Setting up test_utils_module
+Neura-Med AI Biomedical AI Toolkit v1.0.0 initialized.
+  Package root added to path: C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\src
+  Modules: dataset | features | models | deeplearning | evaluation | clinical | utils
+  Done setting up test_utils_module in 0.089255 seconds
+   Running test_utils_module/test_manageVersion_getReturnsValidSemver
+   Done test_utils_module/test_manageVersion_getReturnsValidSemver in 0.0028239 seconds
+   Running test_utils_module/test_saveAndLoadModel_roundTrip
+   Done test_utils_module/test_saveAndLoadModel_roundTrip in 0.10049 seconds
+   Running test_utils_module/test_saveModel_refusesOverwriteByDefault
+   Done test_utils_module/test_saveModel_refusesOverwriteByDefault in 0.069389 seconds
+   Running test_utils_module/test_batchPredict_matchesDirectPrediction
+   Done test_utils_module/test_batchPredict_matchesDirectPrediction in 0.46212 seconds
+   Running test_utils_module/test_manageConfig_saveLoadRoundTrip
+   Done test_utils_module/test_manageConfig_saveLoadRoundTrip in 0.012902 seconds
+   Running test_utils_module/test_manageConfig_getMissingKeyThrows
+   Done test_utils_module/test_manageConfig_getMissingKeyThrows in 0.012813 seconds
+   Running test_utils_module/test_logPerformance_appendsToFile
+   Done test_utils_module/test_logPerformance_appendsToFile in 0.030153 seconds
+  Tearing down test_utils_module
+  Done tearing down test_utils_module in 1.29e-05 seconds
+ Done test_utils_module in 0.77996 seconds
+__________
+
+
+===== Neura-Med AI Toolkit Test Summary =====
+Total:  52
+Passed: 52
+Failed: 0
+Incomplete: 0
+
+===== EXAMPLE: example_disease_classification =====
+Neura-Med AI Biomedical AI Toolkit v1.0.0 initialized.
+  Package root added to path: C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\src
+  Modules: dataset | features | models | deeplearning | evaluation | clinical | utils
+Data valid: 1 | Issues found: 0
+
+=== Random Forest Evaluation ===
+Accuracy : 0.640
+Macro F1 : 0.625
+AUC      : 0.670
+       <strong>Class</strong>        <strong>Sensitivity</strong>    <strong>Specificity</strong>
+    <strong>____________</strong>    <strong>___________</strong>    <strong>___________</strong>
+
+    {'Negative'}      0.76364        0.48889  
+    {'Positive'}      0.48889        0.76364  
+
+
+5-Fold CV Accuracy: 0.653 +/- 0.038
+
+=== Clinical Decision Support ===
+Predicted: Positive (confidence 87.5%, risk tier: Critical)
+Recommend urgent clinical evaluation without delay.
+This output is AI-generated decision support and does NOT constitute a medical diagnosis. All findings must be reviewed and confirmed by a qualified, licensed clinician before any clinical action is taken.
+
+Model saved to C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\examples\output\random_forest_disease_model.mat
+
+===== EXAMPLE: example_signal_analysis_pipeline =====
+Neura-Med AI Biomedical AI Toolkit v1.0.0 initialized.
+  Package root added to path: C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\src
+  Modules: dataset | features | models | deeplearning | evaluation | clinical | utils
+Top 10 ranked features:
+    <strong>Feature</strong>     <strong>Score</strong>      <strong>Rank</strong>
+    <strong>_______</strong>    <strong>________</strong>    <strong>____</strong>
+
+    {'X5' }      1.7891      1 
+    {'X2' }      1.5863      2 
+    {'X1' }      1.5247      3 
+    {'X3' }      1.5088      4 
+    {'X4' }      1.4545      5 
+    {'X16'}    0.049126      6 
+    {'X27'}    0.032677      7 
+    {'X28'}    0.029739      8 
+    {'X17'}    0.025209      9 
+    {'X22'}    0.021162     10 
+
+PCA reduced 10 selected features to 9 components.
+
+Model        Accuracy   MacroF1   
+Tree         0.902      0.900     
+KNN          0.707      0.691     
+NB           0.935      0.935     
+Ensemble     0.935      0.933     
+
+===== EXAMPLE: example_medical_image_classification =====
+Neura-Med AI Biomedical AI Toolkit v1.0.0 initialized.
+  Package root added to path: C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\src
+  Modules: dataset | features | models | deeplearning | evaluation | clinical | utils
+This example expects labeled image subfolders at:
+  C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\examples\sample_images
+Skipping execution: no sample_images/ folder found in this environment.
+Point IMAGE_FOLDER at your dataset (e.g. chest_xrays/Normal, chest_xrays/Pneumonia) to run.
+
+===== DONE. Log saved to: C:\Users\chiti\Downloads\NeuraMedAI-BiomedicalAI-Toolkit-v1.0.0-fixed\NeuraMedAI-Toolkit\run_log.txt =====
